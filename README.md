@@ -9,7 +9,7 @@ http://codahale.com/a-lesson-in-timing-attacks/
 You'll need to get the following artifacts:
 
 ```
-[org.spootnik/constance "0.5.0"]
+[org.spootnik/constance "0.5.2"]
 ```
 
 ```clojure
