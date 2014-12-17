@@ -1,4 +1,6 @@
-(ns org.spootnik.constance)
+(ns org.spootnik.constance
+  "Constant time comparison functions. Use when needing to avoid
+   timing attacks.")
 
 (defn ^Boolean constant=
   "An iterative, constant-time comparison function for byte-arrays"
