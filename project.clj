@@ -1,4 +1,4 @@
-(defproject org.spootnik/constance "0.5.2"
+(defproject org.spootnik/constance "0.5.3-SNAPSHOT"
   :description "constant time comparison"
   :url "https://github.com/pyr/constance"
   :license {:name "Eclipse Public License"
