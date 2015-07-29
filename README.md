@@ -9,8 +9,10 @@ http://codahale.com/a-lesson-in-timing-attacks/
 You'll need to get the following artifacts:
 
 ```
-[org.spootnik/constance "0.5.2"]
+[spootnik/constance "0.5.3"]
 ```
+
+Exposed functions
 
 ```clojure
 (constant-string= "foo" "bar")
@@ -19,6 +21,13 @@ You'll need to get the following artifacts:
 ;; true
 (constant= (.getBytes "h") (.getBytes "a"))
 ;; false
+```
+
+Additionally, two aliases now exist:
+
+```clojure
+(=== "foo" "bar")
+(b=== (.getBytes "h") (.getBytes "a"))
 ```
 
 ## License

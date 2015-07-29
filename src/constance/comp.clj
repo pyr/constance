@@ -1,4 +1,4 @@
-(ns org.spootnik.constance
+(ns constance.comp
   "Constant time comparison functions. Use when needing to avoid
    timing attacks. See: http://codahale.com/a-lesson-in-timing-attacks/")
 
@@ -14,3 +14,6 @@
   "An iterative, constant-time comparison function for strings"
   [^String s1 ^String s2]
   (constant= (.getBytes s1) (.getBytes s2)))
+
+(def === constant-string=)
+(def b=== constant=)
