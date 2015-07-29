@@ -4,6 +4,8 @@ A clojure library offering constant time comparison functions, to avoid timing a
 If you're interested in the purpose of this library, I'd recommend reading this:
 http://codahale.com/a-lesson-in-timing-attacks/
 
+[![Build Status](https://travis-ci.org/pyr/constance.svg?branch=master)](https://travis-ci.org/pyr/constance)
+
 ## Usage
 
 You'll need to get the following artifacts:
