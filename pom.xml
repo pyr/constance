@@ -3,7 +3,7 @@
   <groupId>spootnik</groupId>
   <artifactId>constance</artifactId>
   <packaging>jar</packaging>
-  <version>0.5.4-SNAPSHOT</version>
+  <version>0.5.4</version>
   <name>constance</name>
   <description>constant time comparison</description>
   <url>https://github.com/pyr/constance</url>
@@ -13,7 +13,7 @@
     </license>
   </licenses>
   <scm>
-    <tag>6392015fb9116ef8c2b6913d90bf0b2ec1e683b6</tag>
+    <tag>cfa15856fd33e9f72266153e33991fb555b5b970</tag>
   </scm>
   <build>
     <sourceDirectory>src</sourceDirectory>
@@ -62,6 +62,12 @@
       <groupId>org.clojure</groupId>
       <artifactId>clojure</artifactId>
       <version>1.9.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.clojure</groupId>
+      <artifactId>test.check</artifactId>
+      <version>0.10.0-alpha2</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>
