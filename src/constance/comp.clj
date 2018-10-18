@@ -5,8 +5,8 @@
 (defn ^Boolean constant=
   "An iterative, constant-time comparison function for byte-arrays"
   [^"[B" e1 ^"[B" e2]
-  (and (boolean e1)
-       (boolean e2)
+  (and (some? e1)
+       (some? e2)
        (= (count e1) (count e2))
        (zero? (reduce bit-or 0 (map bit-xor e1 e2)))))
 
