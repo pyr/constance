@@ -1,4 +1,4 @@
-(defproject spootnik/constance "0.5.4"
+(defproject spootnik/constance "0.5.5-SNAPSHOT"
   :description "constant time comparison"
   :url "https://github.com/pyr/constance"
   :license {:name "MIT License"}

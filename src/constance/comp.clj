@@ -13,7 +13,9 @@
 (defn ^Boolean constant-string=
   "An iterative, constant-time comparison function for strings"
   [^String s1 ^String s2]
-  (constant= (.getBytes s1) (.getBytes s2)))
+  (and (boolean s1)
+       (boolean s2)
+       (constant= (.getBytes s1) (.getBytes s2))))
 
 (def === constant-string=)
 (def b=== constant=)

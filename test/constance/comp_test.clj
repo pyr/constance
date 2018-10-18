@@ -6,6 +6,16 @@
             [clojure.test                    :refer :all]
             [constance.comp                  :refer :all]))
 
+(deftest compares-with-nil
+  (is (= (=== "" nil)
+         false))
+  (is (= (=== nil "")
+         false))
+  (is (= (b=== (byte-array 0) nil)
+         false))
+  (is (= (b=== nil (byte-array 0))
+         false)))
+
 (defspec always-equal-string
   1000
   (prop/for-all [s gen/string]
